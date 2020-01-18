@@ -1,0 +1,48 @@
+body {
+    font-family: "Zilla Slab", serif;
+    padding: 1%;
+}
+
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: .5s;
+    top: 0;
+    left: 0;
+}
+
+.side-menu a {
+    display: block;
+    transition: .3s;
+    color: #cccccc;
+    padding: 5%;
+    font-size: 2vw;
+    text-decoration: none;
+}
+
+.side-menu a:hover {
+    color: #f1f1f1;
+}
+
+#content {
+    transition: margin-left .5s;
+}
+
+.close-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: #f1f1f1;
+    padding: 5%;
+}
+
+.open-menu {
+    font-size: 3vw;
+    cursor: pointer;
+}
